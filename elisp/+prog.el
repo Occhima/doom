@@ -209,10 +209,10 @@
   )
 
 
-(after! aider
-  (setq aider-args '("--model" "r1"))
-  (setenv "DEEPSEEK_API_KEY"  (+pass-get-secret "deepseek/api_key"))
-  )
+;; (after! aider
+;;   (setq aider-args '("--model" "r1"))
+;;   (setenv "DEEPSEEK_API_KEY"  (+pass-get-secret "deepseek/api_key"))
+;;   )
 
 (after! ess-r-mode
   (require 'ess-plot)
@@ -232,5 +232,17 @@
   (after! nix-repl
     (set-popup-rule! "^\\*Nix-REPL" :size 0.4 :quit nil :select t)
     (add-hook! 'nix-repl-mode-hook (nix-prettify-mode t))
+    (add-hook! 'nix-repl-mode-hook
+      (let ((repl-file (doom-project-expand "shell.nix")))
+        (when (file-exists-p repl-file)
+          (setq-local nix-repl-executable-args (list "repl" "--file" repl-file))
+          (print! "Configured nix-repl file: %s" repl-file)))
+      )
     )
   )
+
+(after! lsp-nix
+  (setq lsp-nix-nil-formatter ["nixpkgs-fmt"]))
+
+(after! (:and evil nix-repl)
+  (set-evil-initial-state! 'nix-repl-mode 'insert))
