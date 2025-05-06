@@ -1,4 +1,3 @@
-
 (setq
  frame-title-format '"\n" ; use a new-line to make sure rezising info is on the next line
  undo-limit 80000000      ; Raise undo-limit to 80Mb
@@ -13,8 +12,8 @@
  show-trailing-whitespace t
  which-key-idle-secondary-delay 0
  doom-theme 'doom-monokai-classic
- doom-font (font-spec :family "0xProto Nerd Font" :size 18 :weight 'Bold)
- doom-variable-pitch-font (font-spec :family "0xProto Nerd Font" :size 18)
+ doom-font (font-spec :family "Iosevka Nerd Font Mono" :size 17 :weight 'SemiBold)
+ doom-variable-pitch-font (font-spec :family "Iosevka Nerd Font Mono" :size 17)
  doom-symbol-font (font-spec :family "JuliaMono")
  doom-fallback-buffer-name "*dashboard*"
  fancy-splash-image "~/.config/doom/misc/splash/emacs.svg"
