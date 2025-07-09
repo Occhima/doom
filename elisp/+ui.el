@@ -12,8 +12,8 @@
  show-trailing-whitespace t
  which-key-idle-secondary-delay 0
  doom-theme 'doom-monokai-classic
- doom-font (font-spec :family "Iosevka Nerd Font Mono" :size 17 :weight 'SemiBold)
- doom-variable-pitch-font (font-spec :family "Iosevka Nerd Font Mono" :size 17)
+ doom-font (font-spec :family "0xProto Nerd Font" :size 15 :weight 'SemiBold)
+ doom-variable-pitch-font (font-spec :family "Iosevka Nerd Font Mono" :size 15)
  doom-symbol-font (font-spec :family "JuliaMono")
  doom-fallback-buffer-name "*dashboard*"
  fancy-splash-image "~/.config/doom/misc/splash/emacs.svg"
