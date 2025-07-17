@@ -246,3 +246,14 @@
 
 (after! (:and evil nix-repl)
   (set-evil-initial-state! 'nix-repl-mode 'insert))
+
+
+
+
+;; Flyover
+(add-hook! 'flycheck-mode-hook #'flyover-mode)
+(after! flyover
+  (setq flyover-use-theme-colors t
+        flyover-wrap-messages t
+        )
+  )

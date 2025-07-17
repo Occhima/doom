@@ -102,5 +102,7 @@
   :recipe (:host github :repo "DennieTeMolder/ess-plot"))
 (package! scihub :recipe (:host github :repo "emacs-pe/scihub.el"))
 (package! corg :recipe (:host github :repo "isamert/corg.el"))
+(package! flyover :recipe (:host github :repo "konrad1977/flyover"))
+
 
 (provide 'packages)
