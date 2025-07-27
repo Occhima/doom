@@ -29,8 +29,7 @@
        (corfu  +orderless +icons +dabbrev)
        (vertico
         +icons
-        ;; commenting due to bug in my config, long
-        ;; +childframe
+        +childframe
         )
 
 
@@ -117,7 +116,7 @@
 
        :checkers
        (syntax
-        +childframe
+        ;; +childframe
         +flymake
         +icons
         )               ; tasing you for every semicolon you forget
@@ -146,7 +145,7 @@
        (lookup +docsets +dictionary)
        tree-sitter
                                         ; navigate your code and its documentation
-       (lsp +eglot)
+       (lsp +eglot +peek)
        (magit +forge)                   ; a git porcelain for Emacs
        make                             ; run make tasks from Emacs
        (pass +auth)                     ; password manager for nerds
@@ -156,7 +155,7 @@
        ;; taskrunner                     ; taskrunner for all your projects
        ;; ;;  terraform                      ; infrastructure as code
        tmux                             ; an API for interacting with tmux
-       ;; ;; upload
+       upload
        ;;                                  ; map local to remote projects via ssh/ftp
 
        :os

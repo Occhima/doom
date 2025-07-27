@@ -250,6 +250,10 @@
 
 
 
+
+
+
+
 ;; Flyover
 (add-hook! 'flycheck-mode-hook #'flyover-mode)
 (after! flyover

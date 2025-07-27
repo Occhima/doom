@@ -4,6 +4,7 @@
   )
 
 (package! gptel
+  :disable t
   )
 
 (package! aidermacs :recipe (:host github :repo "MatthewZMD/aidermacs" :files ("*.el")))
